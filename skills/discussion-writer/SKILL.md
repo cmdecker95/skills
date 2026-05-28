@@ -1,109 +1,106 @@
 ---
 name: discussion-writer
 description: >
-  Use this skill when the user provides a directory of Markdown files representing a college
-  course and asks you to write a discussion post or discussion reply. Trigger whenever the
-  user mentions writing a discussion post, responding to classmates, or points you to a folder
-  of course notes with a WRITE HERE placeholder. Also trigger when the user says things like
-  "write my discussion", "draft a reply to this post", "fill in the discussion section", or
-  shares a markdown file with a Discussion heading containing a WRITE HERE placeholder.
+  Write college discussion posts/replies from course notes dir. Trigger: user mentions writing discussion post, replying to classmate, points to course notes dir with WRITE HERE placeholder. Also "write my discussion", "draft reply", "fill in discussion section", or markdown file with Discussion heading + WRITE HERE.
 ---
- 
+
 # Discussion Writer
- 
-You help students write college discussion posts and replies using their own course notes as context.
- 
+
+Write college discussion posts/replies using course notes as context.
+
 ## Input Structure
- 
-The user will point you to a **directory of Markdown files** representing a college course:
- 
-- The **directory** = one cohesive course topic
-- Each **file** = one module covering a subtopic
-- **Top of file** = lecture/reading notes
-- **Bottom of file** = discussion section
-## Identifying the Task
- 
-Scan the bottom of each file for a `## Discussion` section. The structure tells you what to write:
- 
-### Task A — Write a Post
- 
+
+User points to **dir of Markdown files** representing college course:
+
+- **Dir** = one course topic
+- **File** = one module (subtopic)
+- **Top** = lecture/reading notes
+- **Bottom** = discussion section
+
+## Identifying Task
+
+Scan file bottom for `## Discussion`. Structure determines task:
+
+### Task A — Write Post
+
 ```markdown
 ## Discussion
 ### Prompt
-...the discussion prompt...
+...prompt...
 ### Post
 <WRITE HERE>
 ```
- 
-→ Fill in the `### Post` section.
- 
+
+→ Fill `### Post` section.
+
 ### Task B — Write Replies
- 
+
 ```markdown
 ## Discussion
 ### Prompt
 ...
 ### Post
-...the student's own post (already written)...
+...student's post (already written)...
 ### Original 1
-...a classmate's post...
+...classmate's post...
 ### Reply 1
 <WRITE HERE>
 ### Original 2
-...another classmate's post...
+...classmate's post...
 ### Reply 2
 <WRITE HERE>
 ```
- 
-→ Fill in each `### Reply N` section.
- 
-There may be 1 or more originals/replies to fill in.
- 
-## How to Read the Directory
- 
-1. **Read all files** in the directory, not just the one with `<WRITE HERE>`. The other modules provide course-wide context that enriches the writing.
-2. **Identify which file(s)** contain `<WRITE HERE>` — that's where you write.
-3. **Use notes from all files** to inform your response, but anchor primarily to the notes in the file containing the prompt.
-## Writing a Post
- 
-- Directly and substantively address the prompt
-- Draw on course concepts, terminology, and ideas from the notes
-- Take a clear position or make a clear argument where appropriate
-- Be specific — reference examples, frameworks, or ideas from the material
-- Aim for the typical college discussion post length: **150–300 words** unless the prompt calls for more
-- Write in **first person**, in a natural student voice — thoughtful but not stiff
-- Do **not** use headers or bullet points unless the prompt specifically asks for a structured response
-- Do **not** pad with filler phrases like "Great question!" or "In conclusion..."
-## Writing a Reply
- 
-- Read the classmate's original post carefully
-- **Engage substantively** — don't just agree or summarize; add something new
-  - Extend their argument with a point they didn't make
-  - Offer a counterpoint or complication grounded in the course material
-  - Connect their idea to a concept from a different module
-  - Ask a genuine follow-up question that pushes the conversation forward (optionally, at the end)
-- Keep it **100–200 words** unless the context calls for more
-- Be collegial and direct — no sycophantic openers ("What a great post!")
-- Write in first person, natural student voice
+
+→ Fill each `### Reply N` section. 1+ originals/replies possible.
+
+## How to Read Dir
+
+1. **Read all files** in dir — other modules provide course-wide context.
+2. **Identify files** with `<WRITE HERE>` — that's where to write.
+3. **Use notes from all files** to inform response, anchor primarily to prompt's file.
+
+## Writing Post
+
+- Address prompt directly + substantively
+- Draw on course concepts, terminology, ideas from notes
+- Clear position/argument where appropriate
+- Specific — reference examples, frameworks, ideas from material
+- **150–300 words** unless prompt calls for more
+- **First person**, natural student voice — thoughtful not stiff
+- **No** headers/bullets unless prompt asks for structured response
+- **No** filler ("Great question!", "In conclusion...")
+
+## Writing Reply
+
+- Read classmate's post carefully
+- **Engage substantively** — don't just agree/summarize; add something new
+  - Extend argument with point they didn't make
+  - Counterpoint/complication grounded in course material
+  - Connect idea to concept from different module
+  - Genuine follow-up question (optional, at end)
+- **100–200 words** unless context demands more
+- Collegial, direct — no sycophantic openers ("What a great post!")
+- First person, natural student voice
+
 ## Tone & Voice
- 
-- Thoughtful undergraduate student voice
-- Engaged but not over-formal; avoid sounding like a textbook
-- Academically grounded — use course vocabulary naturally, not artificially
-- Confident but not arrogant; willing to acknowledge complexity
+
+- Thoughtful undergrad voice
+- Engaged, not over-formal — avoid textbook tone
+- Academically grounded — use course vocabulary naturally
+- Confident but not arrogant; acknowledge complexity
+
 ## Output Format
- 
-Return **only the text to fill in** — no preamble, no explanation, no metadata.
- 
-If writing multiple replies, separate them clearly:
- 
+
+Return **only fill text** — no preamble, explanation, metadata.
+
+For multiple replies:
+
 ```
 **Reply 1**
 [text]
- 
+
 **Reply 2**
 [text]
 ```
- 
-Do not reproduce the full markdown file. Just the content that goes where `<WRITE HERE>` was.
- 
+
+Do not reproduce full markdown. Only content replacing `<WRITE HERE>`.
