@@ -8,6 +8,7 @@ My favorites are marked with ⭐️ ___stars___ ⭐️
 |---|---|---|
 | [caveman](skills/caveman/SKILL.md) | mattpocock/skills | Why waste time say lot word when few word do trick |
 | [ooga-booga](skills/ooga-booga/SKILL.md) ⭐️ | cmdecker95/skills | `caveman`-style SKILL.md compaction |
+| [docx](skills/docx/SKILL.md) | anthropics/skills | Create, read, edit, and manipulate Word documents (.docx files) |
 | [skill-creator](skills/skill-creator/SKILL.md) | anthropics/skills | Create new skills, modify and improve existing skills, and measure skill performance. |
 
 ### Student Survival
