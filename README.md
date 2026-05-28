@@ -20,4 +20,4 @@ My favorites are marked with ⭐️ ___stars___ ⭐️
 
 | name | source | description |
 |---|---|---|
-| [update-and-push](skills/update-and-push/SKILL.md) | cmdecker95/skills | Scan skills, update README table, commit and push |
+| [update-this-repo-and-push](skills/update-and-push-this-repo/SKILL.md) | cmdecker95/skills | Closing hook to finalize README sync and push after skill-change commits |
