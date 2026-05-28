@@ -5,7 +5,7 @@ A collection of agent skills — specialized instruction sets that extend the as
 ## Skills
 
 | name | description |
-|---|---|---|
+|---|---|
 | [caveman](skills/caveman/SKILL.md) | Ultra-compressed communication mode. Cuts token usage ~75% by dropping filler, articles, and pleasantries while keeping full technical accuracy. |
 | [discussion-writer](skills/discussion-writer/SKILL.md) | Write college discussion posts/replies from course notes dir. Trigger: user mentions writing discussion post, replying to classmate, points to course notes dir with WRITE HERE placeholder. |
 | [ooga-booga](skills/ooga-booga/SKILL.md) | Compress SKILL.md into token-efficient caveman version preserving tech accuracy + agent-usability, slashing filler/articles/verbose phrasing. |
