@@ -1,13 +1,6 @@
 ---
 name: update-readme
 description: Update README.md
-metadata:
-  - trigger_phrases:
-      - "update readme"
-      - "refresh readme"
-      - "regenerate readme"
-  - trigger_commands:
-      - "/update-readme"
 ---
 
 ### What I do
