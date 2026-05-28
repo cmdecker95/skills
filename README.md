@@ -1,7 +1,3 @@
-# Skills
-
-A collection of agent skills — specialized instruction sets that extend the assistant's capabilities for specific tasks.
-
 ## Skills
 
 | name | description |
