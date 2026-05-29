@@ -16,6 +16,7 @@ My favorites are marked with ⭐️ ___stars___ ⭐️
 | name | source | description |
 |---|---|---|
 | [discussion-writer](skills/discussion-writer/SKILL.md) ⭐️ | cmdecker95/skills | ~~Write~~ Revise college discussion posts/replies given course notes ~~and peer posts~~ |
+| [apa-citation](skills/apa-citation/SKILL.md) | cmdecker95/skills | Generate APA7 reference citations for webpages, articles, books, videos, and more |
 
 ### Meta Core
 
