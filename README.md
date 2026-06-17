@@ -6,14 +6,15 @@ My favorites are marked with ⭐️ **_stars_** ⭐️
 
 Tools for compact communication, compression, and token tracking.
 
-| name                                                 | source                | description                                 |
-| ---------------------------------------------------- | --------------------- | ------------------------------------------- |
-| ⭐️ [ooga-booga](skills/ooga-booga/SKILL.md)          | cmdecker95/skills     | `caveman`-style SKILL.md compaction         |
-| ⭐️ [caveman](skills/caveman/SKILL.md)                | JuliusBrussee/caveman | Ultra-compressed communication mode         |
-| [cavecrew](skills/cavecrew/SKILL.md)                 | JuliusBrussee/caveman | Decision guide for caveman-style subagents  |
-| [caveman-commit](skills/caveman-commit/SKILL.md)     | JuliusBrussee/caveman | Terse Conventional Commit messages          |
-| [caveman-compress](skills/caveman-compress/SKILL.md) | JuliusBrussee/caveman | Compress memory files into caveman-speak    |
-| [caveman-stats](skills/caveman-stats/SKILL.md)       | JuliusBrussee/caveman | Show real token usage and estimated savings |
+| name                                                 | source                  | description                                 |
+| ---------------------------------------------------- | ----------------------- | ------------------------------------------- |
+| ⭐️ [ponytail](skills/ponytail/SKILL.md)              | DietrichGebert/ponytail | Lazy senior dev agent; one line dunks       |
+| ⭐️ [ooga-booga](skills/ooga-booga/SKILL.md)          | cmdecker95/skills       | `caveman`-style SKILL.md compaction         |
+| ⭐️ [caveman](skills/caveman/SKILL.md)                | JuliusBrussee/caveman   | Ultra-compressed communication mode         |
+| [cavecrew](skills/cavecrew/SKILL.md)                 | JuliusBrussee/caveman   | Decision guide for caveman-style subagents  |
+| [caveman-commit](skills/caveman-commit/SKILL.md)     | JuliusBrussee/caveman   | Terse Conventional Commit messages          |
+| [caveman-compress](skills/caveman-compress/SKILL.md) | JuliusBrussee/caveman   | Compress memory files into caveman-speak    |
+| [caveman-stats](skills/caveman-stats/SKILL.md)       | JuliusBrussee/caveman   | Show real token usage and estimated savings |
 
 ## Student Survival
 
